@@ -1,0 +1,39 @@
+{
+	"info": {
+		"_postman_id": "1f79bfbe-40da-4348-bb1f-8e8388e1fd2b",
+		"name": "ContaFinanceiraEmail",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Notificação por E-mail",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"data\": \"2022-02-14T22:10:00\",\r\n    \"valor\": 10.00,\r\n    \"cliente\": {\r\n        \"nome\": \"Nathalia Lopes\",\r\n        \"email\": \"nathalialcoimbra@gmail.com\"\r\n    },\r\n    \"conta\": {\r\n        \"id\": 1,\r\n        \"saldo\": 12.50\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5003/api/notificacoes",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5003",
+					"path": [
+						"api",
+						"notificacoes"
+					]
+				},
+				"description": "Envio de e-mail de notificação de uma nova transação (saque ou depósito)."
+			},
+			"response": []
+		}
+	]
+}
