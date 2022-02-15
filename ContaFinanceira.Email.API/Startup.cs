@@ -2,6 +2,7 @@ using ContaFinanceira.Email.Application.Services;
 using ContaFinanceira.Email.Application.Validations;
 using ContaFinanceira.Email.Domain.Interfaces;
 using ContaFinanceira.Email.Domain.Requests;
+using ContaFinanceira.Middleware;
 using FluentValidation;
 using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Builder;
@@ -65,6 +66,8 @@ namespace ContaFinanceira.Email.API
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Conta Financeira Email"));
             }
+
+            app.UseMiddleware<LoggerMiddleware>();
 
             app.UseHttpsRedirection();
 

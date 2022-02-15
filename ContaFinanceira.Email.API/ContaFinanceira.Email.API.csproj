@@ -16,6 +16,7 @@
   <ItemGroup>
     <ProjectReference Include="..\ContaFinanceira.Email.Application\ContaFinanceira.Email.Application.csproj" />
     <ProjectReference Include="..\ContaFinanceira.Email.Domain\ContaFinanceira.Email.Domain.csproj" />
+    <ProjectReference Include="..\ContaFinanceira.Email.Middleware\ContaFinanceira.Email.Middleware.csproj" />
   </ItemGroup>
 
 </Project>
