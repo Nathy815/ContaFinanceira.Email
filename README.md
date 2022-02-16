@@ -1,5 +1,5 @@
 # ContaFinanceira.Email
-Envio de e-mail de notificação de transações da aplicação ContaFinanceira
+Envio de e-mail de notificação de transações da aplicação [**ContaFinanceira**](https://github.com/Nathy815/ContaFinanceira)
 
 
 ## Estrutura de Pastas da Solução
@@ -13,9 +13,10 @@ Envio de e-mail de notificação de transações da aplicação ContaFinanceira
 
 
 ## Email
-Envio de e-mail utilizando um falso SMTP chamado Ethereal
+Envio de e-mail utilizando um falso SMTP chamado *Ethereal*
 ![Visualização dos e-mail enviado pelo Ethereal](./medias/1_email_ethereal.png)
 
+Você pode verificar os e-mails enviados fazendo [**login**](https://ethereal.email/login) no site do *Ethereal* utilizando e-mail e senha contidos no arquivo *appsettings.json*
 Para utilizar a aplicação, siga os seguintes passos:
 
 1. Clone o repositório do git ou faça download do projeto
